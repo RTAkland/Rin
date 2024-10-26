@@ -45,9 +45,7 @@ function Footer() {
             <div className="flex flex-col mb-8 space-y-2 justify-center items-center t-primary ani-show">
                 {footerHtml && <div dangerouslySetInnerHTML={{ __html: footerHtml }} />}
                 <p className='text-sm text-neutral-500 font-normal link-line'>
-                    <span>
-                        © 2024 Powered by <a className='hover:underline' href="https://github.com/RTAkland" target="_blank">RTAkland</a>
-                    </span>
+
                     {config.get<boolean>('rss') && <>
                         <Spliter />
                         <Popup trigger={
